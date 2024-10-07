@@ -2,7 +2,7 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: many001
+  name: many001-changedname
 spec:
   repo: https://github.com/mmartin24/test-fleet
   branch: master
