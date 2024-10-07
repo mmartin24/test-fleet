@@ -1,0 +1,13 @@
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: many070
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale-bigchart
+  targetNamespace: many070
+  targets:
+    - clusterSelector: {}
