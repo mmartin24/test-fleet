@@ -4,8 +4,8 @@ apiVersion: fleet.cattle.io/v1alpha1
 metadata:
   name: many053
 spec:
-  repo: https://github.com/manno/fleet-experiments
-  branch: main
+  repo: https://github.com/mmartin24/test-fleet
+  branch: master
   paths:
     - scale-bigchart
   targetNamespace: many053
