@@ -1,0 +1,5 @@
+helm:
+  chart: config-chart
+  values:
+    name: 8-0
+  takeOwnership: true
