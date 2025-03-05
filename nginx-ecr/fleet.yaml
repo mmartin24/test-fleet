@@ -1,0 +1,10 @@
+namespace: fleet-namespace-ecr-nginx
+
+helm:
+  releaseName: sample-ecr-nginx
+  chart: "oci://312662503588.dkr.ecr.eu-central-1.amazonaws.com/nginx:19.0.1"
+  repo: ""
+  force: false
+  timeoutSeconds: 0
+  values:
+    replicas: 2
