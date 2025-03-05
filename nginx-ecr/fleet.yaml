@@ -8,3 +8,5 @@ helm:
   timeoutSeconds: 0
   values:
     replicas: 2
+    service:
+      type: NodePort
