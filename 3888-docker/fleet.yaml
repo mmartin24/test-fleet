@@ -1,0 +1,4 @@
+helm:
+  releaseName: sleeper-chart
+  chart: "oci://10.100.103.149:5555/guestbook"
+  version: "0.0.1"
