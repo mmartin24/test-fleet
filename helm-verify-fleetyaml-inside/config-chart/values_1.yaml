@@ -1,4 +1,4 @@
-url: test-changed
-name: new-name-test-changed
+url: new-url-changed
+name: new-url-test-changed
 otherConfigMap:
   enabled: false
