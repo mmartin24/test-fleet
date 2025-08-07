@@ -1,0 +1,4 @@
+helm:
+  valuesFiles:
+    - config-chart/values.yaml
+  chart: config-chart

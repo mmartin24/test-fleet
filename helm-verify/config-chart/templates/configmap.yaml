@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  test: "value"
+  name: {{ .Values.name }}
+  url: {{ .Values.url | quote }}
+---
+{{- if .Values.otherConfigMap.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: other-config-map
+data:
+  test: "value"
+  name: {{ .Values.name }}
+  url: {{ .Values.url | quote }}
+{{- end }}
