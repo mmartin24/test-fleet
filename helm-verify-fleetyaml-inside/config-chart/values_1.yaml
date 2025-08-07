@@ -1,4 +1,4 @@
-url: test
-name: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+url: test-changed
+name: new-name-test-changed
 otherConfigMap:
-  enabled: true
+  enabled: false
