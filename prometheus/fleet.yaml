@@ -1,0 +1,5 @@
+defaultNamespace: myapp-prometheus
+helm:
+  releaseName: prometheus
+  chart: prometheus
+  repo: https://prometheus-community.github.io/helm-charts
