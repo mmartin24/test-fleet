@@ -4,4 +4,4 @@ metadata:
   name: config-test
   namespace: kube-system
 data:
-  lookup-output: {{ len (lookup "v1" "Pods" "kube-system" "").items }}
+  lookup-output: "{{ len (lookup "v1" "Pods" "kube-system" "").items }}"
