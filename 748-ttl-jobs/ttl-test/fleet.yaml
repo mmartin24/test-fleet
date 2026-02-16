@@ -1,6 +1,6 @@
 kind: Bundle
 metadata:
-  name: job-ttl-local-test
+  name: job-ttl-test
 
 diff:
   comparePatches:
