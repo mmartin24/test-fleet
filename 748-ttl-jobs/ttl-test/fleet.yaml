@@ -7,6 +7,6 @@ diff:
   - apiVersion: batch/v1
     kind: Job
     name: ttl-test-job
-    namespace: default
+    namespace: fleet-local
     operations:
     - {"op":"ignore"}
