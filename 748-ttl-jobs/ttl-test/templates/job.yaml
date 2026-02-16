@@ -2,7 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: ttl-test-job
-  namespace: fleet-local
+  namespace: default
 spec:
   ttlSecondsAfterFinished: 10  # <--- It must be here for K8s to see it
   template:
