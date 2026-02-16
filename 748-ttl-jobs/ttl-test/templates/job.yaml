@@ -2,9 +2,8 @@ diff:
   comparePatches:
   apiVersion: batch/v1
   kind: Job
-  namespace: fleet-local
-  metadata:
-    name: ttl-test-job
+  namespace: default
+  name: ttl-test-job
   operations:
   - {"op":"ignore"}
   spec:
