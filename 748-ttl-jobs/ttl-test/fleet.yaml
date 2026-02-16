@@ -1,3 +1,5 @@
 kind: Bundle
 metadata:
   name: job-ttl-test
+  operations:
+  - {"op":"ignore"}
