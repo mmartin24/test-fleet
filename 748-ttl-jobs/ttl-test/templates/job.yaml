@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ttl-test-job
+spec:
+  # THIS IS THE TTL FIELD
+  ttlSecondsAfterFinished: 10
+  template:
+    spec:
+      containers:
+      - name: worker
+        image: busybox
+        command: ["sh", "-c", "echo 'Work finished!'; sleep 5"]
+      restartPolicy: Never
