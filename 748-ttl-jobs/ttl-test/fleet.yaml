@@ -6,7 +6,7 @@ diff:
   comparePatches:
   - apiVersion: batch/v1
     kind: Job
-    name: ttl-test-[\d]
+    name: ttl-test-[[:job:]]
     namespace: default
     operations:
     - {"op":"ignore"}
