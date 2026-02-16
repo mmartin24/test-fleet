@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: ttl-test-job
+  name: ttl-test-1-Job
   namespace: default
 spec:
   ttlSecondsAfterFinished: 10  # <--- It must be here for K8s to see it
