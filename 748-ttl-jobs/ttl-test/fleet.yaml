@@ -1,7 +1,7 @@
 diff:
   comparePatches:
   - apiVersion: batch/v1
-    kind: Bundle
+    kind: job
     namespace: fleet-local
     name: 'job-ttl-test'
     operations:
