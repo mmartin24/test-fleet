@@ -8,5 +8,5 @@ diff:
     kind: Job
     name: ttl-test-1-job
     namespace: default
-    # operations:
-    # - {"op":"ignore"}
+    operations:
+    - {"op":"ignore"}
