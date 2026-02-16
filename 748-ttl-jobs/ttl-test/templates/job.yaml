@@ -1,14 +1,19 @@
-apiVersion: batch/v1
-kind: Job
-metadata:
-  name: ttl-test-job
-spec:
-  # THIS IS THE TTL FIELD
-  ttlSecondsAfterFinished: 10
-  template:
-    spec:
-      containers:
-      - name: worker
-        image: busybox
-        command: ["sh", "-c", "echo 'Work finished!'; sleep 5"]
-      restartPolicy: Never
+diff:
+  comparePatches:
+  apiVersion: batch/v1
+  kind: Job
+  namespace: fleet-local
+  metadata:
+    name: ttl-test-job
+  operations:
+  - {"op":"ignore"}
+  spec:
+    # THIS IS THE TTL FIELD
+    ttlSecondsAfterFinished: 10
+    template:
+      spec:
+        containers:
+        - name: worker
+          image: busybox
+          command: ["sh", "-c", "echo 'Work finished!'; sleep 5"]
+        restartPolicy: Never
