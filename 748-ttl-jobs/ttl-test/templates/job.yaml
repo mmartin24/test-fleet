@@ -1,18 +1,14 @@
-diff:
-  comparePatches:
-  - apiVersion: batch/v1
-    kind: Job
-    namespace: default
-    name: ttl-test-job
-    operations:
-    - {"op":"ignore"}
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ttl-test-job
+  namespace: default
+spec:
+  ttlSecondsAfterFinished: 10  # <--- It must be here for K8s to see it
+  template:
     spec:
-      # THIS IS THE TTL FIELD
-      ttlSecondsAfterFinished: 10
-      template:
-        spec:
-          containers:
-          - name: worker
-            image: busybox
-            command: ["sh", "-c", "echo 'Work finished!'; sleep 5"]
-          restartPolicy: Never
+      containers:
+      - name: worker
+        image: busybox
+        command: ["sh", "-c", "echo 'Work finished!'; sleep 5"]
+      restartPolicy: Never
