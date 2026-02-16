@@ -1,5 +1,8 @@
-kind: Bundle
-metadata:
-  name: job-ttl-test
-  operations:
-  - {"op":"ignore"}
+diff:
+  comparePatches:
+  - apiVersion: batch/v1
+    kind: Bundle
+    namespace: fleet-local
+    name: 'job-ttl-test'
+    operations:
+    - {"op":"ignore"}
