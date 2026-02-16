@@ -2,6 +2,8 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: ttl-test-job
+  operations:
+  - {"op":"ignore"}
 spec:
   # THIS IS THE TTL FIELD
   ttlSecondsAfterFinished: 10
