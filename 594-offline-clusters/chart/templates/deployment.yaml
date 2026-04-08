@@ -15,6 +15,6 @@ spec:
       - name: test
         image: paulbouwer/hello-kubernetes:1.10
         lifecycle:
-          preStart:
+          preStop:
             exec:
               command: ["sleep", "2"]
