@@ -1,0 +1,17 @@
+# Path: 11584/project.yaml
+apiVersion: management.cattle.io/v3
+kind: Project
+metadata:
+  name: drift-repro-project
+  namespace: local # This targets the management cluster
+spec:
+  displayName: fleet-drift-11584
+  clusterName: local
+  namespaceDefaultResourceQuota:
+    limit:
+      limitsCpu: 1000m
+      limitsMemory: 1024Mi
+  resourceQuota:
+    limit:
+      limitsCpu: "2000m"
+      limitsMemory: "2048Mi"
