@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: repro-fleet-mapping
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fleet-test
+  template:
+    metadata:
+      labels:
+        app: fleet-test
+    spec:
+      containers:
+      - name: pause
+        image: rancher/pause:3.1
