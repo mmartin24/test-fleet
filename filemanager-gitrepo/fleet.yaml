@@ -1,0 +1,10 @@
+defaultNamespace: alert-manager
+helm:
+  releaseName: rancher-alert-manager
+  chart: "oci://dp.apps.rancher.io/charts/alertmanager"
+  force: false
+  timeoutSeconds: 0
+  targetNamespace: alert-manager
+  values:
+    global:
+      imagePullSecrets: [ "application-collection" ]
