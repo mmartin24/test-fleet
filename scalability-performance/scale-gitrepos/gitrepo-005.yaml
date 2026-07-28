@@ -1,0 +1,13 @@
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: many005
+spec:
+  repo: https://github.com/mmartin24/test-fleet
+  branch: main
+  paths:
+    - scalability-performance/scale-bigchart
+  targetNamespace: many005
+  targets:
+    - clusterSelector: {}
