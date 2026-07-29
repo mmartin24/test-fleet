@@ -1,0 +1,9 @@
+defaultNamespace: default
+helm:
+  chart: config-chart
+  values:
+    name: sixteen
+    extra: testvalue
+rolloutStrategy:
+  maxUnavailable: 100%
+  autoPartitionSize: 10
