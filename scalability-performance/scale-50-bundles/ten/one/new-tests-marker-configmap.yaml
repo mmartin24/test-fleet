@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: new-tests-marker
 data:
-  marker: "run=0.16.0 wave=3"
+  marker: "run=0.16.0"
