@@ -10,4 +10,4 @@ helm:
     image: nginx:1.27
 rolloutStrategy:
   maxUnavailable: 100%
-  autoPartitionSize: 10
+  autoPartitionSize: 20%
