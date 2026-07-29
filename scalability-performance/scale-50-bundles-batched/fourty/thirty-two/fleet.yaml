@@ -7,3 +7,4 @@ helm:
 rolloutStrategy:
   maxUnavailable: 100%
   autoPartitionSize: 20%
+  autoPartitionThreshold: 1
