@@ -7,7 +7,7 @@ helm:
     # new-tests: bumped per wave by lib/gitrepo-commits.sh's push_image_bump,
     # to force a real rolling pod restart across all target clusters instead
     # of a no-op ConfigMap tweak.
-    image: nginx:1.27
+    image: nginx:1.25
 rolloutStrategy:
   maxUnavailable: 100%
   autoPartitionSize: 100%
